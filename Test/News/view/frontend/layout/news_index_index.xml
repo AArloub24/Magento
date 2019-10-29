@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+		<css src="Test_News::css/test.news.css" />
+	</head>
+	<body>
+        <referenceContainer name="content">
+            <block class="Test\News\Block\ListNews" name="list_news" template="Test_News::listnews.phtml" />
+        </referenceContainer>
+    </body>
+</page>

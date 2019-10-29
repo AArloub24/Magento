@@ -1,0 +1,35 @@
+.blog-blogmodule .blg-blog-list {
+	padding: 15px;
+	border: 1px solid #ccc;
+	display: block;
+	margin-top: -1px;
+}
+.blog-blogmodule .blg-blog-list:nth-child(even){
+	background-color:#f1f1f1;
+}
+.blog-blogmodule .blg-blog-list:nth-child(odd){
+	background-color:#FAFAFA;
+}
+.blog-blogmodule .blg-blog-title {
+	font-weight:bold;
+	font-size:16px;
+	margin-bottom:5px;
+}
+.blog-blogmodule .blg-blog-time {
+	font-size:14px;
+	color:#666;
+	font-style:italic;
+}
+.blog-blogmodule .pager {
+	margin-top:20px;
+	display:flex;
+}
+.blog-blogmodule .toolbar-amount {
+	margin-right:20px;
+}
+.blog-blogmodule .blg-blog-desc {
+	margin-top:15px;
+}
+.blog-blogmodule a:hover {
+	text-decoration:none;
+}

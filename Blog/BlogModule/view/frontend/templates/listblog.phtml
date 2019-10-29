@@ -1,0 +1,24 @@
+<div class="blog-blogmodule">
+	<?php $allblog = $this->getListBlog() ?>
+	<?php if($allblog && count($allblog) > 0): ?>
+		<?php foreach($allblog as $blog): ?>
+			<div class="blg-blog-list">
+				<div class="blg-blog-title">
+					<a href="<?php echo $block->getBaseUrl() ?>blog/index/view/?id=<?php echo $blog->getId() ?>">
+						<?php echo $blog->getTitle() ?>
+					</a>
+					</div>
+				<div class="blg-blog-time"><?php echo $blog->getCreatedAt() ?></div>
+				<div class="blg-blog-desc"><?php echo $blog->getDescription() ?></div>
+			</div>
+		<?php endforeach; ?>
+		
+		<?php if($this->getPagerHtml()): ?>
+			<?php echo $this->getPagerHtml(); ?>
+		<?php endif; ?>
+	<?php else: ?>
+		<div class="blog-no-records">
+			<?php echo __('Blog not available'); ?>
+		</div>
+	<?php endif; ?>
+</div>

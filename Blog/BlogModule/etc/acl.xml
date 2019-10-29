@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Blog_BlogModule::blogmodule" title="Blog" sortOrder="51">
+                    <resource id="Blog_BlogModule::blog_allblog" title="All Blogs" sortOrder="10">
+						<resource id="Blog_BlogModule::save" title="Save Blogs" translate="title" sortOrder="10" />
+						<resource id="Blog_BlogModule::blog_delete" title="Delete Blogs" translate="title" sortOrder="20" />
+					</resource>
+                </resource>
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="Blog_BlogModule::blog_config" title="Daily Blogs" translate="title"/>
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

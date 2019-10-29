@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+	  <add id="Blog_BlogModule::blogmodule" title="Blog" translate="title" module="Blog_BlogModule" sortOrder="90" dependsOnModule="Blog_BlogModule" resource="Blog_BlogModule::blogmodule"/>
+
+	  <add id="Blog_BlogModule::blog" title="Blogs" translate="title" module="Blog_BlogModule" parent="Blog_BlogModule::blogmodule" sortOrder="50" dependsOnModule="Blog_BlogModule" resource="Blog_BlogModule::blog"/>
+	  <add id="Blog_BlogModule::blog_allblog" title="All Blogs" translate="title" module="Blog_BlogModule" parent="Blog_BlogModule::blog" sortOrder="10" dependsOnModule="Blog_BlogModule" action="blog/allblog" resource="Blog_BlogModule::blog_allblog"/>
+	  <add id="Blog_BlogModule::settings" title="Settings" translate="title" module="Blog_BlogModule" parent="Blog_BlogModule::blogmodule" sortOrder="60" dependsOnModule="Blog_BlogModule" resource="Blog_BlogModule::settings"/>
+	  <add id="Blog_BlogModule::blog_config" title="Configuration" translate="title" module="Blog_BlogModule" parent="Blog_BlogModule::settings" sortOrder="10" dependsOnModule="Blog_BlogModule" action="adminhtml/system_config/edit/section/blog_blogmodule" resource="Blog_BlogModule::blog_config"/>
+	</menu>
+</config>
